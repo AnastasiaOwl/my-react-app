@@ -22,12 +22,10 @@ const ToDoForm = ({ setShowAddForm, addTodo }) => {
 
     addTodo(newTodo);
 
-    // Clear input fields after adding
     setInputTitle('');
     setInputDescription('');
     setInputCheckbox(false);
 
-    // Close the form
     setShowAddForm(false);
   };
 
@@ -39,7 +37,7 @@ const ToDoForm = ({ setShowAddForm, addTodo }) => {
         value={inputTitle}
         onChange={(e) => setInputTitle(e.target.value)}
       />
-      <input className='input-description'
+      <textarea className='input-description'
         type="text"
         placeholder="Description"
         value={inputDescription}

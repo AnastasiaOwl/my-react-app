@@ -1,24 +1,48 @@
 .page-form{
-    margin: 10px;
+    margin-top: 90px;
     background-color: rgb(69, 75, 93);
-    width:800px;
-    min-height: 90vh;
+    width: 800px;
+    min-height: 50vh;
     place-self: center;
+    align-content: center;
 }
 .items{
     display: flex;
     align-items: flex-start;
     font-family: monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
-    margin-top: 154px;
     flex-direction: column;
     margin-left: 20px;
 }
+.button-save{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute; 
+    top: 180px;
+    right: 380px;
+}
 .form-input{
     margin:6px;
+    width: 500px;
+    height: 30px;
 }
 
 .form-inputDescr{
     margin:6px;
-    width: 450px;
+    width: 550px;
+    height: 90px;
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    padding: 8px;
+    line-height: 1.8;
+    box-sizing: border-box;
+}
+
+.label-item{
+    display: flex;
+    width: 750px;
+    justify-content: space-evenly; 
 }

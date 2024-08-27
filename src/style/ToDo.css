@@ -31,11 +31,17 @@
 
   .input-name,
   .input-description {
+    width:80px;
     margin: 5px;
     font-size: 15px;
     color: rgb(0, 0, 0);
     word-wrap: break-word;
     width: fit-content; 
+  }
+
+  .input-description{
+    width: 700px;
+    line-height: 1.8;
   }
   
 

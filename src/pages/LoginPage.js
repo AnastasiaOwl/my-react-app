@@ -15,7 +15,7 @@ const LoginPage = () => {
   const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
 
   const handleLoginSuccess = (email) => {
-    dispatch(setLoggedInUser(true)); // Dispatch action to update login status
+    dispatch(setLoggedInUser(true)); 
     localStorage.setItem('loggedInUser', email);
   };
 
@@ -81,7 +81,7 @@ const LoginPage = () => {
           <p className='error-message'>User with this login and email already exists.</p>
         )}
         {error && <p className='error-message'>{error}</p>}
-        <p>Already have registered? Super, go here <NavLink className='login-link' to='/AuthPage'>authorize</NavLink></p>
+        <p className='register-text'>Already have registered? Super, go here <NavLink className='login-link' to='/AuthPage'>authorize</NavLink></p>
       </div>
     </div>
   );

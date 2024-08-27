@@ -52,7 +52,7 @@ const TodosPage = ({ updateTodo }) => {
     <>
       <div className='page-form'>
         <div className='items'>
-        <label>Title:
+        <label className='label-item'>Title:
         <input  className='form-input'
           type="text"
           placeholder="Title"
@@ -61,8 +61,8 @@ const TodosPage = ({ updateTodo }) => {
           onChange={handleChange}
         />
         </label>
-        <label>Description:
-        <input className='form-inputDescr'
+        <label className='label-item'>Description:
+        <textarea  className='form-inputDescr'
           type="text"
           placeholder="Description"
           name="description"
@@ -70,7 +70,7 @@ const TodosPage = ({ updateTodo }) => {
           onChange={handleChange}
         />
         </label>
-        <Link className='button' to="/ToDoList" onClick={handleSaveTodo}><FontAwesomeIcon icon={faSave} /></Link>
+        <Link className='button-save' to="/ToDoList" onClick={handleSaveTodo}><FontAwesomeIcon icon={faSave} /></Link>
         </div>
       </div>
     </>

@@ -21,7 +21,7 @@ function App() {
   const { isLoggedIn } = useSelector((state) => state.auth);
 
   useEffect(() => {
-    console.log('isLoggedIn:', isLoggedIn); // Add this
+    console.log('isLoggedIn:', isLoggedIn); 
     checkLoggedIn();
   }, []);
   

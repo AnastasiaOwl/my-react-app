@@ -10,12 +10,11 @@ const AuthPage = () => {
   const [userNotFound, setUserNotFound] = useState(false);
   const [error, setError] = useState(null);
 
-  // Redux
   const dispatch = useDispatch();
   const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
 
   const handleLoginSuccess = (email) => {
-    dispatch(setLoggedInUser(true)); // Dispatch action to update login status
+    dispatch(setLoggedInUser(true)); 
     localStorage.setItem('loggedInUser', email);
   };
 
